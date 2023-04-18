@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #111;
+    color:#fff;
+    font-family: 'Poppins', sans-serif;
 }
 
 *:focus{
@@ -9,6 +13,7 @@
 }
 
 body{
+    color:white;
     position: relative;
     background: #f0f0f0;
     font-family: 'roboto', sans-serif;
@@ -124,7 +129,9 @@ body{
     background: #fff;
     padding-right: 10px;
 }
-
+.side-bar a{
+    color:white;
+}
 .links{
     display: block;
     width: 100%;
@@ -145,7 +152,8 @@ body{
 
 .links:hover,
 .links.active{
-    background: rgba(0, 0, 0, 0.1);
+  color:red;
+  background-color: rgba(0,0,0,0.1);
 }
 
 .seperator{
@@ -168,12 +176,22 @@ body{
     padding: 0 20px;
     display: flex;
     align-items: center;
-    overflow-x: auto;
+    overflow-x: scroll;
     overflow-y: hidden;
 }
 
 .filters::-webkit-scrollbar{
-    display: none;
+    width: 10px;
+}
+
+
+.filters::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.filters::-webkit-scrollbar-thumb {
+  background: red;
+  border-radius: 10px;
 }
 
 .filter-options{
@@ -184,8 +202,9 @@ body{
     border: 1px solid #dbdbdb;
     text-transform: capitalize;
     margin-right: 10px;
-    color: #242424;
+    color:#242424;
     font-size: 15px;
+    font-weight: 500;
     cursor: pointer;
 }
 
