@@ -58,3 +58,9 @@ searchBtn.addEventListener('click', () => {
         location.href = searchLink + searchInput.value;
     }
 })
+
+const homebtn=document.querySelector('.toggle-btn');
+homebtn.addEventListener('click',()=>{
+    const side=document.querySelector('.side-bar');
+    side.classList.toggle('active');
+})
